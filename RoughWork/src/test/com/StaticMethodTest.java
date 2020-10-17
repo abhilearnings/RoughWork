@@ -2,8 +2,17 @@ package test.com;
 
 public class StaticMethodTest {
 	
-	static int i ;
+	static int i =2;
+	int i1 = 121 ;
 	static final int b = 20;
+	
+	
+	
+	public StaticMethodTest(){
+		
+		i++;
+		
+	}
 	
 	static void testname(){
 		
@@ -11,10 +20,10 @@ public class StaticMethodTest {
 	}
 	public static void main(String[] args) {
 		
-		System.out.println(i);
+		System.out.println(StaticMethodTest.i);
+		StaticMethodTest obj2 = new StaticMethodTest();
 		
-		testname();
-		
+		System.out.println(StaticMethodTest.i);
 	}
 
 }
